@@ -1,0 +1,12 @@
+{
+  "name": "LMS",
+  "scripts": {
+    "dev": "concurrently -n \"SERVER,CLIENT\" -c \"green,yellow\" \"npm run server\" \"npm run client\"",
+    "server": "cd server1 && npm run dev",
+    "client": "cd client && npm start"
+  },
+  "dependencies": {
+    "concurrently": "^9.2.1",
+    "nodemon": "^3.1.10"
+  }
+}
